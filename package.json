@@ -1,0 +1,14 @@
+{
+  "name": "product-preview-card-component-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Product preview card component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/main.scss ./css/styles.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.80.7"
+  }
+}

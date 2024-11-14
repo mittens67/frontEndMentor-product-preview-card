@@ -1,0 +1,134 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  height: 100vh;
+  position: relative;
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(228, 12%, 48%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 63.4rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.card__image {
+  height: 40%;
+  width: auto;
+}
+.card__image img {
+  height: 100%;
+  width: 100%;
+}
+.card__content {
+  padding: 2.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: space-between;
+  height: 100%;
+}
+.card__header p {
+  font-size: 1.2rem;
+  letter-spacing: 0.5rem;
+  margin-bottom: 1rem;
+}
+.card__header h1 {
+  font-family: "Fraunces", serif;
+  font-size: 3.2rem;
+  color: hsl(212, 21%, 14%);
+}
+.card__text {
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+}
+.card__price {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.card__price-final {
+  font-family: "Fraunces", serif;
+  color: hsl(158, 36%, 37%);
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+.card__price-discount {
+  font-size: 1.4rem;
+  text-decoration: line-through;
+}
+.card__button {
+  width: 100%;
+  padding: 1.3rem;
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  border-radius: 0.5rem;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+.card__button:hover {
+  background-color: hsl(158, 72%, 19%);
+}
+
+@media screen and (min-width: 575px) {
+  .card {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card {
+    flex-direction: row;
+    height: 50rem;
+    width: 70%;
+  }
+  .card__image {
+    width: 50%;
+    height: auto;
+  }
+  .card__content {
+    width: 50%;
+    gap: 1.5rem;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 992px) {
+  .card {
+    width: 50%;
+  }
+  .card__content {
+    padding: 3rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card {
+    width: 50%;
+  }
+  .card__content {
+    padding: 6rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
